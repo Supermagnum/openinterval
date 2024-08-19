@@ -1,0 +1,25 @@
+My idea for a Route planner with intervals, based on data from openstreetmap.org 
+
+A example: say I have plan a roadtrip that has the total length of 692.8 km, 12 h 0  min on a web page. I want to drive 3-4 hours per day.
+
+Map example:
+https://routing.openstreetmap.de/?z=12&center=61.191747%2C7.260590&loc=61.263212%2C12.825336&loc=61.184197%2C7.244966&loc=62.471141%2C6.155176&hl=en&alt=0&srv=0 
+
+The map tool then splits the total length in 3-4 hours intervals, and searces for suitable places to park over the night using the openstreetmap api. 
+Then it displays those on the map, with possibility to write to gpx files.
+
+The relevant openstreet tags can be found here for official rest places.
+https://wiki.openstreetmap.org/wiki/Tag:highway%3Drest_area 
+
+More unofficial can look like this, a parking lot with a toilet nearby. 
+https://www.openstreetmap.org/way/694070893 
+
+Even more unofficial:
+Camping in Norway has these rules, if Camping along roads that has gravel surface and little traffic is OK if:
+Minimum 100 meters away from houses, don't litter or block the road.
+Tags for such a road might look like this example:
+https://www.openstreetmap.org/way/273239448#map=14/61.89398/10.86351
+https://www.openstreetmap.org/way/273940924#map=16/61.88433/10.73965
+
+Information about the api, it has a python wrapper among other things.
+https://wiki.openstreetmap.org/wiki/Overpass_API
